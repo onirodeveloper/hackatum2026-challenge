@@ -1,0 +1,1 @@
+<merge src="code template/res/element/string.json.ftl" dest="${rootOut}/src/main/resources/base/element/string.json"/>

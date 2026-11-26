@@ -1,0 +1,10 @@
+{
+  "description": "Report the number of files containing Code Linter issues",
+  "replacements": [
+    {
+      "before": "Files checked: ${lt(n.filesChecked)}",
+      "after": "Files with issues: ${lt(n.filesChecked)}",
+      "expectedOccurrences": 2
+    }
+  ]
+}

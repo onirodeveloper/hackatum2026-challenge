@@ -1,0 +1,15 @@
+{
+  "description": "Count distinct files with Code Linter issues in text and JSON reports",
+  "replacements": [
+    {
+      "before": "summary:j9(r,e)}}function j9(r,e){let t=V9(e);return{filesChecked:G9(r).size,",
+      "after": "summary:j9(e)}}function j9(e){let t=V9(e);return{filesWithIssues:G9(e).size,",
+      "expectedOccurrences": 1
+    },
+    {
+      "before": "Files checked: ${Tr(r.filesChecked)}",
+      "after": "Files with issues: ${Tr(r.filesWithIssues)}",
+      "expectedOccurrences": 2
+    }
+  ]
+}

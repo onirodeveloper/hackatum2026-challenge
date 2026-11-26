@@ -1,0 +1,10 @@
+{
+  "description": "Disable process-tree memory sampling on Windows",
+  "replacements": [
+    {
+      "before": "function ys(r,e=2e3,t=!1){let n=0,i=!1,",
+      "after": "function ys(r,e=2e3,t=!1){if(process.platform===\"win32\")return{stop:async()=>0};let n=0,i=!1,",
+      "expectedOccurrences": 1
+    }
+  ]
+}

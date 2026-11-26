@@ -1,0 +1,9 @@
+# Internal agent guidance for this repository only; not published to participants.
+/AGENTS.md
+
+# Installed dependencies are not part of the skill source.
+/skills/hmos-arkts-knowledge-retriever/linter-cli/node_modules/
+
+# Python bytecode caches are generated, not source.
+__pycache__/
+*.pyc

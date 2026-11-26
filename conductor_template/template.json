@@ -1,0 +1,62 @@
+{
+  "id": "Conductor Hackathon Template",
+  "displayName": "Conductor Hackathon Template",
+  "description": "Creates an API 20+ hackathon starter that requires the Conductor development workflow.",
+  "descriptionZh": "创建要求使用 Conductor 开发工作流的 API 20+ 黑客松启动工程。",
+  "category": "ability",
+  "functionType": "basic",
+  "globalsFile": "parameter.json.ftl",
+  "recipeFile": "command.xml.ftl",
+  "templateIcon": "Hackathon Icon.svg",
+  "addOnTemplateIcon": "Hackathon Icon.svg",
+  "templatePreviewImage": "Hackathon Preview.svg",
+  "minCompileSdk": 20,
+  "addOnMinCompatibleSdk": "6.0.0(20)",
+  "projectType": "Application,Atomic Service",
+  "apiType": {
+    "Application": {
+      "stageMode" : {
+        "minCompileSdk" : 20,
+        "developmentMode": {
+          "traditionalCode": [
+            {
+              "uiSyntax": "eTS",
+              "deviceType": ["default", "tablet", "2in1", "car", "wearable", "tv"],
+              "minCompatibleSdk": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  "addOnApiType": {
+    "Application": {
+      "stageMode" : {
+        "minCompatibleSdk" : "6.0.0(20)",
+        "developmentMode": {
+          "traditionalCode": [
+            {
+              "uiSyntax": "eTS",
+              "deviceType": ["phone", "tablet", "2in1", "car", "wearable","tv"],
+              "minCompatibleSdk": "6.0.0(20)"
+            }
+          ]
+        }
+      }
+    },
+    "Atomic Service": {
+      "stageMode" : {
+        "minCompatibleSdk" : "6.0.0(20)",
+        "developmentMode": {
+          "traditionalCode": [
+            {
+              "uiSyntax": "eTS",
+              "deviceType": ["phone", "tablet", "car"],
+              "minCompatibleSdk": "6.0.0(20)"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
